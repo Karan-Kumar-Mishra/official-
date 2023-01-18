@@ -1,0 +1,263 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+    scroll-behavior: smooth;
+    background-color: black;
+}
+#main{
+    display: grid;
+    height: 40rem;
+    width: 70rem;
+    position: relative;
+    top:5rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    border: 2px solid red;
+    border-radius: 2rem;
+    animation: zack;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transition-property:  display;
+    transition-duration: 0.5s;
+    
+}
+
+@keyframes zack{
+    0%{
+    box-shadow: 2px 2px 380px 2px aqua;
+    }
+    25%
+    {
+    box-shadow: 2px 2px 80px 2px blue;
+        
+    }
+    50%{
+    box-shadow: 2px 2px 80px 2px  rgb(19, 185, 163);
+        
+    }
+    75%{
+    box-shadow: 2px 2px 380px 2px rgb(56, 59, 231);
+        
+    }
+    100%{
+    box-shadow: 2px 2px 80px 2px rgb(47, 212, 157);
+
+    }
+}
+
+#content{
+  color: white;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: Pacifico;
+  padding: 5rem;
+  font-size: 2rem;
+  animation: zack5;
+  animation-duration: 2s;
+
+}
+@keyframes zack5
+{
+  0%
+  {
+  opacity: 0.5;
+  }
+  25%
+  {
+    opacity: 0.2;
+  }
+  50%
+  {
+    opacity: 1.0;
+  }
+  75%
+  {
+    opacity: 1.5;
+  }
+  100%
+  {
+    opacity: 2.5;
+  }
+}
+#btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#btn button{
+    background-color:blue;
+    color :white;
+    border: 1px solid white;
+    height: 3rem;
+    width: 15rem;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    transition-property:  width;
+    transition-duration: 0.5s;
+    
+}
+#btn button:hover{
+    width: 20rem;
+    color: aqua;
+    background-color: black;
+    border :1px solid white;
+    box-shadow: 4px 4px 50px 4px blue;
+}
+
+#photo{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+#photo img{
+ border-radius: 50%;
+ height: 15rem;
+ width: 15rem;
+ border: 2px solid white;
+ animation: zack3;
+ animation-duration: 3s;
+ animation-iteration-count: infinite;
+}
+@keyframes zack3
+{
+    0%{
+      border :3px solid aqua;
+      
+    }
+    25%{
+      border :3px solid rgb(187, 218, 235);
+        
+    }
+    50%{
+      border :3px solid blue;
+        
+    }
+    75%{
+      border :3px solid blueviolet;
+        
+    }
+    100%{
+      border :3px solid green; 
+    }
+}
+#icon{
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#icon >a{
+    font-size: 3rem;
+    padding: 1rem;
+    width: 5rem;
+    transition-property:  font-size;
+    transition-duration: 0.5s;
+}
+#icon > a:hover {
+    font-size: 3.5rem;
+    color: aqua;
+    background-color: black;
+    box-shadow: 4px 4px 50px 4px blue;
+    border-radius: 50%;
+}
+#contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  width: 40rem;
+  font-size: 2rem;
+  border: 2px solid red;
+  border-radius: 2rem;
+  display: none;
+  background-color: rgb(20, 23, 23);
+  position: relative;
+  top:-33rem;
+  animation: zack3;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes zack3{
+   0%{
+    box-shadow: 2px 2px 380px 2px aqua;
+    }
+    25%
+    {
+    box-shadow: 2px 2px 80px 2px blue;        
+    }
+    50%{
+    box-shadow: 2px 2px 80px 2px  rgb(19, 185, 163);     
+    }
+    75%{
+    box-shadow: 2px 2px 380px 2px rgb(56, 59, 231);
+        
+    }
+    100%{
+    box-shadow: 2px 2px 80px 2px rgb(47, 212, 157);
+    }
+}
+#contact input{
+  text-align: center;
+  margin: 1rem;
+  height: 3rem;
+  width: 30rem;
+  font-size: 1rem;
+  border-radius: 2rem;
+  border: 2px solid blue;
+}
+#contact button{
+  margin: 2rem;
+  height: 3rem;
+  font-size: 2rem;
+  width: 10rem;
+  border-radius: 3rem;
+  background-color: blue;
+  color: white;
+  border: 1px solid white;
+}
+#contact textarea{
+  height: 8rem;
+  width: 35vw;
+  margin: 2rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  border: 2px solid blue;
+}
+#contactmain{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
+#contact #btn_submit{
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid white;
+  font-size: 2rem;
+  width: 10rem;
+  transition-property:  width;
+  transition-duration: 0.5s;
+
+}
+#contact #btn_submit:hover{
+width: 20rem;
+color: aqua;
+background-color: black;
+border :1px solid white;
+box-shadow: 4px 4px 50px 4px blue;
+}

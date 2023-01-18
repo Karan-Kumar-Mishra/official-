@@ -1,0 +1,119 @@
+@media only screen 
+    and (min-width : 30px)  and (max-width:450px)
+    and (min-height : 80px) and (max-height:1000px) 
+ {
+html{
+  scroll-behavior: smooth;
+}
+#main{
+    display: grid;
+    height: 80rem;
+    width: 20rem;
+    margin-bottom: 10rem;
+    position: relative;
+    top:5rem;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 1fr auto;
+    border: 2px solid red;
+    border-radius: 2rem;
+    animation: zack;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+#main >div 
+{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+}
+#photo img{
+    height: 18rem;
+    width: 18rem;
+}
+#content {
+    font-size: 10px;
+    padding: 4rem;
+}
+#btn button{
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+    position:sticky ;
+    height: 3rem;
+    width: 15rem;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    transition-property:  width;
+    transition-duration: 0.5s;   
+}
+#btn button:hover{
+    width: 18rem;
+    color: aqua;
+    background-color: black;
+    border :1px solid white;
+    box-shadow: 4px 4px 50px 4px blue;
+}
+#icon {
+    margin-bottom: 4rem;
+    transition-property: color;
+    transition-duration: 1s;
+
+}
+#icon :hover{
+    box-sizing: 2px 2px 50px 2px blue; 
+}
+#contact{
+    height: 40rem;
+    width: 20rem;
+    position: absolute;
+    top:10rem;
+    background-size: cover;
+    
+}
+#contact input{
+    text-align: center;
+    margin: 1rem;
+    height: 4rem;
+    width: 15rem;
+    font-size: 1rem;
+    border-radius: 2rem;
+    border: 2px solid blue;
+  }
+  #contact button{
+    margin: 2rem;
+    height: 3rem;
+    font-size: 2rem;
+    width: 10rem;
+    border-radius: 3rem;
+    background-color: blue;
+    color: white;
+    border: 1px solid white;
+  }
+  #contact textarea{
+    height: 10rem;
+    width: 60vw;
+    margin: 2rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    border: 2px solid blue;
+  }
+  #contact #btn_submit{
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid white;
+    font-size: 2rem;
+    width: 10rem;
+    transition-property:  width;
+    transition-duration: 0.5s;
+  
+  }
+  #contact #btn_submit:hover{
+  width: 15rem;
+  color: aqua;
+  background-color: black;
+  border :1px solid white;
+  box-shadow: 4px 4px 50px 4px blue;
+  }
+  
+}
